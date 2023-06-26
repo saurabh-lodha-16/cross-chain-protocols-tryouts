@@ -1,0 +1,33 @@
+{
+  "name": "cross-chain-protocols-tryouts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/saurabh-lodha-16/cross-chain-protocols-tryouts.git",
+  "author": "Saurabh Lodha <saurabhlodha221b@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploySenderAxelar": "HARDHAT_NETWORK=sender npx hardhat run scripts/Axelar/deploySender.js",
+    "deployReceiverAxelar": "HARDHAT_NETWORK=receiver npx hardhat run scripts/Axelar/deployReceiver.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.0.0",
+    "@typechain/ethers-v6": "^0.4.0",
+    "@typechain/hardhat": "^8.0.0",
+    "chai": "^4.2.0",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.16.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0",
+    "typechain": "^8.1.0"
+  },
+  "dependencies": {
+    "@axelar-network/axelar-gmp-sdk-solidity": "^3.5.0",
+    "dotenv": "^16.3.1"
+  }
+}
